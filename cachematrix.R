@@ -1,8 +1,12 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
-
+## This function returns a vector to manipulate matrix
+## Following list contains
+## get the matrix value 
+## obtain the matrix value 
+## get the inverse value of the matrix 
+## obtain the inverse value of the matrix
 makeCacheMatrix <- function(x = matrix()) {
         r <- NULL
         set <- function(y) {
@@ -18,8 +22,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Following function is used to calculate the special "matrix"
+## Before the function starts its calculate it confirms the previous calculated inverse 
+## The computation is skipped if the inverse is recieved from the previous function
+## If not, the inverse in calculated to set the inverse value 
+## Setinverse in finally obtained
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         r <- x$getreverse()
